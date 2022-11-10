@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="/usr/themes/adams/style/style.css" type="text/css" rel="stylesheet">
+<link href="/usr/themes/adams/static/caomei1.2.8/style.css" type="text/css" rel="stylesheet">
+<link href="/usr/themes/adams/style/wpBlockLib.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300|Noto+Serif+SC:300&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type='text/javascript' src="/usr/themes/adams/static/script.js"></script>
+<script type='text/javascript' src="/usr/themes/adams/static/support.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js" integrity="sha256-9I2FxupwHkF6hXzZKS3hLCwP95XFukX3EnxRzGqXzz0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/instantclick/3.1.0/instantclick.min.js" integrity="sha256-T8RTGotskdhLXy/3avHtzYliRm9WCbiiqm5dbCVH87s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<title>关于 | 夜言</title>
+<meta name="description" content="这是一个开发中的实验性站点，上线于2021年8月24日当前版本v1.3.1（210828）已知问题：评论功能暂不可用已修复对于多行文章标题和正文中的多行引用，存在无行距的问题已修复联系方式：中国..." />
+<meta name="generator" content="Typecho 1.2/18.10.23" />
+<meta name="template" content="adams" />
+<link rel="alternate" type="application/rss+xml" title="关于 &raquo; 夜言 &raquo; RSS 2.0" href="/feed/a.html" />
+<link rel="alternate" type="application/rdf+xml" title="关于 &raquo; 夜言 &raquo; RSS 1.0" href="/feed/rss/a.html" />
+<link rel="alternate" type="application/atom+xml" title="关于 &raquo; 夜言 &raquo; ATOM 1.0" href="/feed/atom/a.html" />
+<script type="text/javascript">
+(function () {
+    window.TypechoComment = {
+        dom : function (id) {
+            return document.getElementById(id);
+        },
+    
+        create : function (tag, attr) {
+            var el = document.createElement(tag);
+        
+            for (var key in attr) {
+                el.setAttribute(key, attr[key]);
+            }
+        
+            return el;
+        },
+
+        reply : function (cid, coid) {
+            var comment = this.dom(cid), parent = comment.parentNode,
+                response = this.dom('respond-page-46'), input = this.dom('comment-parent'),
+                form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                textarea = response.getElementsByTagName('textarea')[0];
+
+            if (null == input) {
+                input = this.create('input', {
+                    'type' : 'hidden',
+                    'name' : 'parent',
+                    'id'   : 'comment-parent'
+                });
+
+                form.appendChild(input);
+            }
+
+            input.setAttribute('value', coid);
+
+            if (null == this.dom('comment-form-place-holder')) {
+                var holder = this.create('div', {
+                    'id' : 'comment-form-place-holder'
+                });
+
+                response.parentNode.insertBefore(holder, response);
+            }
+
+            comment.appendChild(response);
+            this.dom('cancel-comment-reply-link').style.display = '';
+
+            if (null != textarea && 'text' == textarea.name) {
+                textarea.focus();
+            }
+
+            return false;
+        },
+
+        cancelReply : function () {
+            var response = this.dom('respond-page-46'),
+            holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+
+            if (null != input) {
+                input.parentNode.removeChild(input);
+            }
+
+            if (null == holder) {
+                return true;
+            }
+
+            this.dom('cancel-comment-reply-link').style.display = 'none';
+            holder.parentNode.insertBefore(response, holder);
+            return false;
+        }
+    };
+})();
+</script>
+<script>
+        if(localStorage.adams_color_style) $('head').append("<style class='diy-color-style'>" + localStorage.adams_color_style + "</style>");
+        if(localStorage.adams_font_style) $('head').append("<style class='diy-font-style'>" + localStorage.adams_font_style + "</style>");
+    </script>
+</head>
+<body>
+
+<header class="header">
+<section class="container">
+<hgroup itemscope itemtype="https://schema.org/WPHeader">
+<h1 class="fullname">
+关于 </h1>
+</hgroup>
+<nav class="social">
+<ul id="menu-socialx" class="menu">
+<li class="czs-rss menu-item menu-item-type-custom menu-item-object-custom">
+<a title="RSS" target="_blank" href="/feed/">RSS</a>
+</li>
+</ul>
+</nav>
+<nav class="header_nav">
+<ul id="menu-header" class="menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4759"><a href="/" aria-current="page">首页</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom">
+<a href="/category/m/">记忆</a>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom">
+<a href="/category/r/">书评</a>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom">
+<a href="/category/s/">星海</a>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom">
+<a href="/category/n/">小说</a>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/a.html" title="关于">关于</a></li>
+</ul>
+</nav>
+</section>
+<section class="infos">
+<div class="container">
+<h2 class="fixed-title"></h2>
+
+<div class="fields">
+<span><i class="czs-time-l"></i> 2021-08-26</span> /
+<span><i class="czs-user-l"></i> 安言</span> /
+<span><i class="czs-talk-l"></i> 1 条</span>
+</div>
+</div>
+</section>
+</header>
+
+<section class="container main-load">
+<article class="post_article" itemscope itemtype="https://schema.org/Article">
+<p>这是一个开发中的实验性站点，上线于2021年8月24日<br>当前版本v1.3.1（210828）</p><p>已知问题：</p><ul><li><del>评论功能暂不可用</del>已修复</li><li><del>对于多行文章标题和正文中的多行引用，存在无行距的问题</del>已修复</li></ul><p>联系方式：中国大陆请联系<a href="/cdn-cgi/l/email-protection#28521a18181b191a1a1068191a1e064b4745"><span class="__cf_email__" data-cfemail="a5df979595969497979de59497938bc6cac8">[email&#160;protected]</span></a>；其他地区请联系<a href="/cdn-cgi/l/email-protection#ef95dddfdfdcdeddddd7af88828e8683c18c8082"><span class="__cf_email__" data-cfemail="d2a8e0e2e2e1e3e0e0ea92b5bfb3bbbefcb1bdbf">[email&#160;protected]</span></a></p> </article>
+<nav class="nearbypost">
+<div class="alignleft">没有了</div>
+<div class="alignright">没有了</div>
+</nav>
+</section> 
+<section class="comments">
+<div class="container" data-no-instant>
+<h3 id="comments" class="comments-title">1 条回应：“关于”</h3>
+<h3>仅有一条评论</h3>
+<div class="commentlist"><ol class="comment-list">
+<li id="li-comment-5" class="comment comment-body parent odd">
+<div id="div-comment-15991" class="comment-body">
+<div class="comment-author vcard">
+<img class="avatar" src="https://gravatar.loli.net/avatar/bedbc698e8dbf819a84b440b9ad0ee8e?s=120&amp;r=G&amp;d=" alt="Misaka13514" width="120" height="120" />
+<cite class="fn"><a href="https://blog.atri.tk/" rel="external nofollow">Misaka13514</a></cite><span class="says">说道：</span>
+</div>
+<div class="comment-meta commentmetadata">
+<a href="/a.html#comment-5">2021-08-26 16:46</a>
+</div>
+<p><p>评论功能现已可用</p></p>
+<div class="reply"><a href="/a.html?replyTo=5#respond-page-46" rel="nofollow" onclick="return TypechoComment.reply('comment-5', 5);">回复</a></div>
+</li>
+</ol></div>
+<div class="navigation"></div>
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">发表评论<small><a id="cancel-comment-reply-link" href="/a.html#respond-page-46" rel="nofollow" style="display:none" onclick="return TypechoComment.cancelReply();">取消回复</a></small></h3>
+<form method="post" action="/a.html/comment" id="commentform" role="form">
+
+<p class="comment-notes"><span id="email-notes">电子邮件地址不会被公开。</span> 必填项已用<span class="required">*</span>标注</p>
+<p class="comment-form-author">
+<label for="author" class="required">称呼 *</label>
+<input type="text" name="author" id="author" class="text" value="" required />
+</p>
+<p class="comment-form-email">
+<label for="mail">电子邮箱 *</label>
+<input id="email" name="mail" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required">
+</p>
+<p class="comment-form-url">
+<label for="url">网站</label>
+<input type="url" name="url" id="url" class="text" placeholder="http://" value="" />
+</p>
+<p class="comment-form-comment">
+<label for="textarea" class="required">评论</label>
+<textarea rows="8" cols="45" name="text" id="textarea" class="textarea" required></textarea>
+</p>
+<p class="form-submit">
+<input name="submit" type="submit" id="submit" class="submit" value="发表评论" /> <input type='hidden' name='comment_post_ID' value='4905' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>
+</form>
+</div>
+</div>
+</section>
+<footer class="footer">
+<section class="container">
+<span id="hitokoto">少女祈祷中......</span>
+<p>
+<span class='left'>&copy; 2022 <a href="/">夜言</a>
+<span class='right'> Made with ❤️ by AnYan & YinYe </span>
+</p>
+</section>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+<div class="setting_tool iconfont">
+<a class="back2top" style="display:none;"><i class="czs-arrow-up-l"></i></a>
+<a class="sosearch"><i class="czs-search-l"></i></a>
+<a class="socolor"><i class="czs-clothes-l"></i></a>
+<div class="s">
+<form id="search" method="post" action="/" role="search" class="search">
+<input class="search-key text" id="s" name="s" autocomplete="off" placeholder="输入关键词..." type="text" value="" required="required">
+</form>
+</div>
+<div class="c">
+<ul>
+<li class="color undefined">默认</li>
+<li class="color sepia">护眼</li>
+<li class="color night">夜晚</li>
+<li class="hr"></li>
+<li class="font serif">Serif</li>
+<li class="font sans">Sans</li>
+</ul>
+</div>
+</div>
+<script data-no-instant>
+    document.addEventListener('DOMContentLoaded', () => {
+        pangu.autoSpacingPage();
+    });
+    (function ($) {
+        $.extend({
+            adamsOverload: function () {
+                $('.navigation:eq(0)').remove();
+                $(".post_article a").attr("rel" , "external");
+                $("a[rel='external']:not([href^='#']),a[rel='external nofollow']:not([href^='#'])").attr("target","_blank");
+                $("a.vi,.gallery a,.attachment a").attr("rel" , "");
+                $.viewImage({
+                    'target'  : '.gallery a,.gallery img,.attachment a,.post_article img,.post_article a,a.vi',
+                    'exclude' : '.readerswall img,.gallery a img,.attachment a img',
+                    'delay'   : 300
+                });
+                $.lately({
+                    'target' : '.commentmetadata a,.infos time,.post-list time'
+                });
+                prettyPrint();
+                
+                $('ul.links li a').each(function(){
+                    if($(this).parent().find('.bg').length==0){
+                        $(this).parent().append('<div class="bg" style="background-image:url(https://www.google.com/s2/favicons?domain='+$(this).attr("href")+')"></div>')
+                    }
+                });
+            }
+        });
+    })(jQuery);
+    InstantClick.on('change', function(isInitialLoad) {
+        jQuery.adamsOverload();
+        if (isInitialLoad === false) {
+            // support MathJax
+            if (typeof MathJax !== 'undefined') MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+            // support google code prettify
+            if (typeof prettyPrint !== 'undefined') prettyPrint();
+            // support 百度统计
+            if (typeof _hmt !== 'undefined') _hmt.push(['_trackPageview', location.pathname + location.search]);
+            // support google analytics
+            if (typeof ga !== 'undefined') ga('send', 'pageview', location.pathname + location.search);
+        }
+    });
+    InstantClick.on('wait', function() {
+        // pjax href click
+    });
+    InstantClick.on('fetch', function() {
+        // pjax begin
+    });
+    InstantClick.on('receive', function() {
+        // pjax end
+    });
+    InstantClick.init('mousedown');
+    jQuery.adamsOverload();
+
+</script>
+</body>
+</html>
